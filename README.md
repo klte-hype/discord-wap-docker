@@ -39,6 +39,18 @@ Steps:
 * For quick access in the future, you should add the main menu (Servers/DMs/Settings selection) to your bookmarks. This bookmark will contain your account's token.
 
 ## Self-hosting
+
+### With Docker
+
+1. Install [Docker](https://www.docker.com/).
+2. Clone this repository.
+3. Copy `.env.example` to `.env`.
+4. Edit the variables inside the `.env` file as you see fit.
+4. Open a terminal in the folder of the cloned repository.
+5. Run `docker build --network=host -t discord-wap-image .` and `docker run --network host --name discord-wap-container -d discord-wap-image`.
+
+### Directly (without Docker)
+
 1. Install [Node.js](https://nodejs.org).
 2. Clone this repository.
 3. Copy `.env.example` to `.env`.
